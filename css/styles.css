@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'Bastro';
+    src:
+      local('Bastro'),
+      local('BastroRegular'),
+      url('../font/BastroRegular.woff2') format('woff2'),
+      url('../font/BastroRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src:
+      local('Open Sans Light'),
+      local('OpenSans-Light'),
+      url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff)
+        format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Open Sans'),
+      local('OpenSans'),
+      url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff)
+        format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src:
+      local('Open Sans Semibold'),
+      local('OpenSans-Semibold'),
+      url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff)
+        format('woff');
+  }
+
+/* Reset some default styles */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: Bastro;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.01);
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+header {
+    background: rgb(237,118,164);
+    background: linear-gradient(90deg, rgba(237,118,164,0.4) 0%, rgba(63,169,245,0.4) 100%);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100vw;
+    color: white;
+}
+
+nav {
+    margin: 10px;
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Bastro;
+}
+
+nav a:hover {
+    scale: 1.2;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background: rgb(237,118,164);
+    background: linear-gradient(90deg, rgba(237,118,164,0.5) 0%, rgba(63,169,245,0.5) 100%);
+    color: white;
+}
+
+#about {
+    background: #3FA9F5;
+    background: linear-gradient(0deg, rgba(205, 222, 243, 0.95) 0%, rgba(235, 224, 252, 0.95) 100%);
+    color: #82A6D7;
+}
+
+#services {
+    background: #FFF;
+    background: linear-gradient(0deg, rgba(254, 254, 255, 0.6) 0%, rgba(121, 95, 160, 0.9) 100%);
+}
+
+#services h1{
+    color: white;
+}
+
+.brandingsection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.brandingbox{
+    background: linear-gradient(180deg, rgba(237,118,164,0.25) 0%, rgba(63,169,245,0.25) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.brandingsection div h2{
+    color: #C1B2D7;
+    text-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+.brandingsection div li{
+    color: #FFF;
+    font-weight: 800;
+}
+
+.brandingsection div p{
+    color: #ff0073;
+    font-weight: 800;
+}
+
+
+#contact {
+    background: #000000;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.95) 0%, rgba(99, 99, 99, 0.95) 100%);
+    min-height: 100vh;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textfield {
+    text-align: center;
+    min-width: 300px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.textfield{
+    text-align: justify;
+}
+
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    background: #000;
+    color: white;
+  }
+  
+  .fa:hover {
+      opacity: 0.8;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-whatsapp {
+    background: #28D146;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: rgb(221, 42, 123);
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+  
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+  
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+  
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+
+  .fa-github {
+    background: #6e5494;
+    color: #fff;
+  }
+
+  .fa-steam {
+    background: rgb(30, 48, 80);
+    color: #fff;
+  }
+
+  .fa-xbox {
+    background: #107C10;
+    color: #fff;
+  }
+
+  .fa-discord {
+    background: #5865F2;
+    color: #fff;
+  }
+
+  .fa-paypal {
+    background: #00457C;
+    color: #fff;
+  }
+
+  .fa-envelope {
+    background: #7c0036;
+    color: #fff;
+  }
+
+  .cu-chess {
+    background: #312e2b;
+    color: #fff;
+  }
+
+  .cu-revolut {
+    background: #ffffff;
+    color: #000000;
+  }
+
+#martedesign_solutions_img {
+    width: 100vw;
+}
+
+#abouttitle {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #EE94BC;
+}
+
+.clean-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(235, 224, 252, 0.85);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.font {
+    font-family: Bastro;
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Your styles for mobile screens go here */
+    body {
+      font-size: 15px; /* Adjust the font size for better readability on smaller screens */
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav {
+        width: 100vw;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    nav a {
+        font-size: 10px;
+    }
+
+    section {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #logoimage {
+        height: 200px;
+    }
+  }
