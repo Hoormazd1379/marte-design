@@ -127,11 +127,15 @@ section {
 
 #services {
     background: #FFF;
-    background: linear-gradient(0deg, rgba(254, 254, 255, 0.6) 0%, rgba(121, 95, 160, 0.9) 100%);
+    background: linear-gradient(0deg, rgba(254, 254, 255, 0.6) 0%, #795fa0e6 100%);
+    color: #83147a;
 }
 
 #services h1{
     color: white;
+}
+#services h2{
+    color: #83147a;
 }
 
 .brandingsection {
@@ -166,18 +170,55 @@ section {
 
 #contact {
     background: #000000;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.95) 0%, rgba(99, 99, 99, 0.95) 100%);
+    background: linear-gradient(45deg, rgba(146, 146, 146, 0.77) 0%, rgba(182, 165, 209, 0.99) 100%);
     min-height: 100vh;
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.textfield {
+.textfield, .lang{
     text-align: center;
     min-width: 300px;
     width: 80%;
     max-width: 800px;
+}
+
+.lang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lang a{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(94, 14, 94);
+}
+
+#artwork {
+    background: #F8998D ;
+    height: auto;
+    width: 100vw;
+}
+
+#artwork .imgholder {
+    background-color: white;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+    max-width: 1024px;
+}
+
+#artwork .imgholder img{
+    width: 40vw;
+    max-width: 512px;
 }
 
 .textfield{
@@ -454,3 +495,51 @@ button:hover {
         height: 200px;
     }
   }
+
+  .menu-btn {
+    display: none;
+    width: 50px;
+  }
+
+  .dropdown-content{
+    display: none;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 1005;
+  }
+
+  .dropdown-content a{
+    color: white;
+    text-decoration: none;
+    font-family: Bastro;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      padding: 0;
+      margin: 0;
+        flex-direction: row; /* Stack items vertically on small screens */
+        justify-content: space-between;
+    }
+
+    .navitem {
+        margin-bottom: 10px; /* Add some spacing between links on small screens */
+        display: none; /* Hide regular links on small screens */
+    }
+
+    .menu-btn {
+        display: block; /* Display the button on small screens */
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none; /* Hide the dropdown content by default */
+    }
+
+    .menu-btn.active, .dropdown-content.active {
+        display: flex; /* Display the dropdown when the button is active */
+    }
+}
