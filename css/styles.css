@@ -326,7 +326,7 @@ section {
 
 #velvet2 {
   grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: repeat(1, 30VW);
+  grid-template-rows: repeat(2, 13vw);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas:
