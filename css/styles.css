@@ -123,6 +123,15 @@ section {
     color: white;
 }
 
+#logoimage {
+  height: 30vh;
+}
+
+.homesec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 #about {
     background: #3FA9F5;
     background: linear-gradient(0deg, rgba(205, 222, 243, 0.95) 0%, rgba(235, 224, 252, 0.95) 100%);
