@@ -30,6 +30,21 @@
         </div>
     </header>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to the button and dropdown content
+            const menuButton = document.querySelector('.menu-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+    
+            // Add a click event listener to the button
+            menuButton.addEventListener('click', function () {
+                // Toggle the 'active' class on both the button and the dropdown content
+                menuButton.classList.toggle('active');
+                dropdownContent.classList.toggle('active');
+            });
+        });
+    </script>
+
     <section id="artwork">
         <br/>
         <br/>

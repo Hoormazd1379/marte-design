@@ -355,7 +355,7 @@ section {
 
 .textfield, .lang{
     text-align: center;
-    min-width: 300px;
+    min-width: 80px;
     width: 80%;
     max-width: 800px;
 }
@@ -753,11 +753,27 @@ button:hover {
 
     .aboutus2 {
       flex-direction: column;
+      height: auto;
     }
 
     .aboutus3 {
       flex-direction: column;
+      height: auto;
     }
+
+    .lang a h2{
+      font-size: small;
+    }
+
+    .lang a{
+      background-color: white;
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 0.2em;
+      text-decoration: none;
+      color: rgb(94, 14, 94);
+  }
   }
 
   .menu-btn {
