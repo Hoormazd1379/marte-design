@@ -295,6 +295,7 @@ section {
 
 .service-full .textfield {
   padding: 50px;
+  text-align: left;
 }
 
 .service-img {
