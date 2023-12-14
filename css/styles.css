@@ -388,8 +388,8 @@ section {
 #mezcal {
   grid-template-columns: repeat(4, 20vw);
   grid-template-rows: repeat(3, 20vw);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   grid-template-areas:
     "a1 a2 a3 a4"
     "b1 b2 b3 b4"
@@ -400,22 +400,22 @@ section {
 #velvet {
   grid-template-columns: repeat(4, 20vw);
   grid-template-rows: repeat(1, 20vw);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
 }
 
 #velvet1 {
   grid-template-columns: repeat(2, 40vw);
   grid-template-rows: repeat(1, 50VW);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
 }
 
 #velvet2 {
   grid-template-columns: repeat(4, 20vw);
   grid-template-rows: repeat(2, 13vw);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   grid-template-areas:
     "a1 a2 a2 a3"
     "a1 a2 a2 a3";
@@ -423,14 +423,16 @@ section {
 
 #lawfirm {
   grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: repeat(4, 20vw);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-rows: repeat(6, 20vw);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   grid-template-areas:
     "a1 a2 a3 a3"
     "b1 b2 a3 a3"
-    "c1 c2 c3 c4"
-    "d1 d2 d3 d4";
+    "c1 c1 c3 c4"
+    "c1 c1 d3 d4"
+    "e1 e1 e2 e2"
+    "e1 e1 e2 e2";
 }
 
 #artwork .imgholder img {
