@@ -58,7 +58,7 @@ h1 {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.01);
 }
 
@@ -121,15 +121,104 @@ section {
     background: rgb(237,118,164);
     background: linear-gradient(90deg, rgba(237,118,164,0.5) 0%, rgba(63,169,245,0.5) 100%);
     color: white;
+    height: 100vh;
 }
 
+#home .textfield {
+  text-align: center;
+}
+
+
 #logoimage {
-  height: 30vh;
+  height: 45vh;
 }
 
 .homesec {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.aboutus1 {
+  background-image: url("../img/about/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100vw;
+}
+
+.aboutus1 .textfield {
+  text-align: center;
+  color: #ffffff;
+  /* background-color: #ee76a699;
+  border-radius: 10px;
+  padding: 20px; */
+}
+
+.aboutus2 {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  background-color: #4679bccc;
+  color: white;
+}
+
+.aboutus2 div {
+
+  padding: 10px;
+}
+
+.aboutus2 .textfield{
+  text-align: left;
+}
+
+.aboutus2 .aboutpoints {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+}
+
+.aboutus2 .sideimage {
+  width: 50vw;
+}
+
+.aboutus2 .aboutpoints img {
+  width: 3em;
+  height: 3em;
+}
+
+.aboutus3 {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  --s: 50px;
+  --c: #ffffff22;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #ffffff11 66%,#ffffff66 68% 70%,#ffffff22 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
+.aboutus3 .sideimage {
+  width: 30vw;
+}
+
+.aboutus3 .right{
+  margin: 20px;
+  font-size: 1.4em;
+  width: 50%;
 }
 
 #about {
@@ -345,7 +434,7 @@ section {
 
 #lawfirm {
   grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: repeat(3, 20vw);
+  grid-template-rows: repeat(4, 20vw);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas:
@@ -380,6 +469,13 @@ section {
     text-align: justify;
 }
 
+.textfield h2{
+  font-size: 2.3em;
+}
+
+.textfield p{
+  font-size: 1.6em;
+}
 
 .fa {
     padding: 10px;
@@ -653,6 +749,14 @@ button:hover {
 
     video {
       display: none;
+    }
+
+    .aboutus2 {
+      flex-direction: column;
+    }
+
+    .aboutus3 {
+      flex-direction: column;
     }
   }
 
