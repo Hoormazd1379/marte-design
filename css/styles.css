@@ -774,6 +774,23 @@ button:hover {
       text-decoration: none;
       color: rgb(94, 14, 94);
   }
+
+  .aboutus2 h2{
+    font-size: 5vw;
+  }
+
+  .aboutus2 p {
+    font-size: 4vw;
+  }
+
+  .aboutus3 {
+    width: 100%;
+  }
+
+  .aboutus3 .right{
+    width: 90%;
+    font-size: 4wv;
+  }
   }
 
   .menu-btn {
