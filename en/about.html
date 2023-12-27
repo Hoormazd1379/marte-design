@@ -154,5 +154,38 @@
     </script>
     <!--End of Tawk.to Script-->
 
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+  const aboutUsSection = document.querySelector(".aboutus2");
+  const prevSection = document.querySelector(".aboutus1");
+
+  function createStar() {
+    const star = document.createElement("div");
+    star.className = "star";
+    const randomClass = Math.floor(Math.random() * 3) + 1;
+    star.classList.add(`star${randomClass}`);
+    aboutUsSection.appendChild(star);
+
+    const randomX = Math.random() * aboutUsSection.offsetWidth;
+    const randomY = prevSection.offsetHeight + Math.random() * aboutUsSection.offsetHeight;
+
+    star.style.left = `${randomX}px`;
+    star.style.top = `${randomY}px`;
+
+    setTimeout(() => {
+      star.remove();
+    }, 2000);
+  }
+
+  function generateStars() {
+    setInterval(() => {
+      createStar();
+    }, 200);
+  }
+
+  generateStars();
+});
+      </script>
+
 </body>
 </html>
