@@ -354,6 +354,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
 }
 
 .service-box:hover {
@@ -372,7 +373,7 @@ section {
   font-size: 0.9em;
   text-decoration: none;
   background-color: #f7d7e5;
-  color: #000;
+  color: #650a77;
   border-radius: 20px;
   padding: 4px;
   padding-left: 10px;
@@ -397,6 +398,7 @@ section {
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.0666666667);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
 }
 
 .service-full .textfield {
@@ -568,9 +570,9 @@ section {
 
 .fa {
   padding: 10px;
-  font-size: 30px;
-  width: 31px;
-  height: 31px;
+  font-size: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   text-align: center;
   text-decoration: none;
@@ -914,6 +916,7 @@ button:hover {
   }
   .service-full {
     flex-direction: column;
+    font-size: 0.8em;
   }
   .service-img {
     max-height: 80vw;
