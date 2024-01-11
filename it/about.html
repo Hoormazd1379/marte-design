@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://kit.fontawesome.com/e3b50b909d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -32,7 +34,7 @@
             // Get references to the button and dropdown content
             const menuButton = document.querySelector('.menu-btn');
             const dropdownContent = document.querySelector('.dropdown-content');
-    
+
             // Add a click event listener to the button
             menuButton.addEventListener('click', function () {
                 // Toggle the 'active' class on both the button and the dropdown content
@@ -48,14 +50,15 @@
                 A PROPOSITO DI NOI
             </h2>
             <p>
-                La nostra missione è creare soluzioni di comunicazione efficaci e d'impatto per connettervi con il vostro pubblico. 
+                La nostra missione è creare soluzioni di comunicazione efficaci e d'impatto per connettervi con il
+                vostro pubblico.
             </p>
         </div>
 
     </section>
 
     <section class="aboutus2">
-       <div class="left">
+        <div class="left">
             <div class="textfield">
                 <h2>
                     Lavoriamo con passione e creatività per trasmettere i vostri valori ai vostri clienti.
@@ -63,30 +66,39 @@
                 <p>
                     Le nostre tre promesse per voi:
                     <div class="aboutlist">
-                            <div class="aboutpoints">
-                                <img src="../img/about/icon1.png"/> <p> &nbsp; Ascolteremo le vostre esigenze e i vostri obiettivi.</p>
-                            </div>
-                            <div class="aboutpoints">
-                                <img src="../img/about/icon3.png"/> <p> &nbsp; Metteremo la nostra creatività al vostro servizio.</p>
-                            </div>
-                            <div class="aboutpoints">
-                                <img src="../img/about/icon2.png"/> <p> &nbsp; Lavoreremo costantemente al vostro fianco per trovare nuovi modi di ispirare e sorprendere.</p>
-                            </div>
+                        <div class="aboutpoints">
+                            <img src="../img/about/icon1.png" />
+                            <p> &nbsp; Ascolteremo le vostre esigenze e i vostri obiettivi.</p>
+                        </div>
+                        <div class="aboutpoints">
+                            <img src="../img/about/icon3.png" />
+                            <p> &nbsp; Metteremo la nostra creatività al vostro servizio.</p>
+                        </div>
+                        <div class="aboutpoints">
+                            <img src="../img/about/icon2.png" />
+                            <p> &nbsp; Lavoreremo costantemente al vostro fianco per trovare nuovi modi di ispirare e
+                                sorprendere.</p>
+                        </div>
                     </div>
                 </p>
             </div>
-       </div>
-       <div class="right">
-            <img class="sideimage" src="../img/about/aboutus2.png"/>
-       </div>
+        </div>
+        <div class="right">
+            <img class="sideimage" src="../img/about/aboutus2.png" />
+        </div>
     </section>
 
     <section class="aboutus3">
         <div class="left">
-            <img class="sideimage" src="../img/about/photo2.png"/>
+            <img class="sideimage" src="../img/about/photo2.png" />
         </div>
         <div class="right">
-            <p>Ciao, sono Mariana Escalera, una professionista appassionata di comunicazione, marketing digitale e graphic design. Mi impegno ad accompagnare i miei clienti nel processo di creazione ed esposizione della loro immagine pubblica, dalla definizione dei valori alla base dell'impresa alla creazione di campagne pubblicitarie coinvolgenti. Con dedizione, creatività e un approccio strategico aiuto i miei clienti a trasformare le loro idee in esperienze visive che consentano loro di connettersi con il proprio pubblico in modo autentico e duraturo. </p>
+            <p>Ciao, sono Mariana Escalera, una professionista appassionata di comunicazione, marketing digitale e
+                graphic design. Mi impegno ad accompagnare i miei clienti nel processo di creazione ed esposizione della
+                loro immagine pubblica, dalla definizione dei valori alla base dell'impresa alla creazione di campagne
+                pubblicitarie coinvolgenti. Con dedizione, creatività e un approccio strategico aiuto i miei clienti a
+                trasformare le loro idee in esperienze visive che consentano loro di connettersi con il proprio pubblico
+                in modo autentico e duraturo. </p>
         </div>
     </section>
 
@@ -141,58 +153,64 @@
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/65674ae01db16644c555e71e/1hgdnov6r';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65674ae01db16644c555e71e/1hgdnov6r';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-   const aboutUsSection = document.querySelector(".aboutus2");
-   const prevSection = document.querySelector(".aboutus1");
- 
-   function createStar() {
-     const star = document.createElement("div");
-     star.className = "star";
-     const randomClass = Math.floor(Math.random() * 3) + 1;
-     star.classList.add(`star${randomClass}`);
-     aboutUsSection.appendChild(star);
- 
-     const randomX = Math.random() * aboutUsSection.offsetWidth;
-     const randomY = prevSection.offsetHeight + Math.random() * aboutUsSection.offsetHeight;
- 
-     star.style.left = `${randomX}px`;
-     star.style.top = `${randomY}px`;
- 
-     setTimeout(() => {
-       star.remove();
-     }, 2000);
-   }
- 
-   function generateStars() {
-     setInterval(() => {
-       createStar();
-     }, 200);
-   }
- 
-   generateStars();
- });
-       </script>
-       <!-- Google tag (gtag.js) --> 
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ553SHW02"></script> 
-       <script> 
-       window.dataLayer = window.dataLayer || []; 
-       function gtag(){dataLayer.push(arguments);} 
-       gtag('js', new Date()); 
-       
-       gtag('config', 'G-BJ553SHW02'); 
-       </script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutUsSection = document.querySelector(".aboutus2");
+            const prevSection = document.querySelector(".aboutus1");
+
+            function createStar() {
+                const star = document.createElement("div");
+                star.className = "star";
+                const randomClass = Math.floor(Math.random() * 3) + 1;
+                star.classList.add(`star${randomClass}`);
+                aboutUsSection.appendChild(star);
+
+                const randomX = Math.random() * aboutUsSection.offsetWidth;
+                const randomY = prevSection.offsetHeight + Math.random() * aboutUsSection.offsetHeight;
+
+                star.style.left = `${randomX}px`;
+                star.style.top = `${randomY}px`;
+
+                setTimeout(() => {
+                    star.remove();
+                }, 2000);
+            }
+
+            function generateStars() {
+                setInterval(() => {
+                    createStar();
+                }, 200);
+            }
+
+            generateStars();
+        });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ553SHW02"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BJ553SHW02');
+    </script>
 
 </body>
+
 </html>

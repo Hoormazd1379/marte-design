@@ -49,12 +49,18 @@
   src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
 }
 /* Reset some default styles */
-body, h1, h2, ul, li, p {
+body,
+h1,
+h2,
+ul,
+li,
+p {
   margin: 0;
   padding: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Bastro;
 }
 
@@ -449,7 +455,8 @@ section {
   padding-bottom: 50px;
 }
 
-.textfield, .lang {
+.textfield,
+.lang {
   text-align: center;
   min-width: 80px;
   width: 80%;
@@ -808,7 +815,8 @@ button:hover {
 @media only screen and (max-width: 767px) {
   /* Your styles for mobile screens go here */
   body {
-    font-size: 15px; /* Adjust the font size for better readability on smaller screens */
+    font-size: 15px;
+    /* Adjust the font size for better readability on smaller screens */
   }
   h1 {
     font-size: 25px;
@@ -892,27 +900,34 @@ button:hover {
   nav {
     padding: 0;
     margin: 0;
-    flex-direction: row; /* Stack items vertically on small screens */
+    flex-direction: row;
+    /* Stack items vertically on small screens */
     justify-content: space-between;
   }
   nav img {
     display: block;
   }
   .navitem {
-    margin-bottom: 10px; /* Add some spacing between links on small screens */
-    display: none; /* Hide regular links on small screens */
+    margin-bottom: 10px;
+    /* Add some spacing between links on small screens */
+    display: none;
+    /* Hide regular links on small screens */
   }
   .menu-btn {
-    display: block; /* Display the button on small screens */
+    display: block;
+    /* Display the button on small screens */
     color: white;
     border: none;
     cursor: pointer;
   }
   .dropdown-content {
-    display: none; /* Hide the dropdown content by default */
+    display: none;
+    /* Hide the dropdown content by default */
   }
-  .menu-btn.active, .dropdown-content.active {
-    display: flex; /* Display the dropdown when the button is active */
+  .menu-btn.active,
+  .dropdown-content.active {
+    display: flex;
+    /* Display the dropdown when the button is active */
   }
   .service-full {
     flex-direction: column;

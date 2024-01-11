@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://kit.fontawesome.com/e3b50b909d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <video id="background-video" autoplay loop muted>
         <source src="../img/background.mp4" type="video/mp4">
@@ -35,7 +37,7 @@
             // Get references to the button and dropdown content
             const menuButton = document.querySelector('.menu-btn');
             const dropdownContent = document.querySelector('.dropdown-content');
-    
+
             // Add a click event listener to the button
             menuButton.addEventListener('click', function () {
                 // Toggle the 'active' class on both the button and the dropdown content
@@ -50,26 +52,28 @@
         <form action="https://getform.io/f/75714a07-1bf0-4b49-ab28-9b8143b67a98" method="POST" class="clean-form">
             <h1>Contattaci</h1>
             <br>
-            <p> Compila il modulo sottostante per inviarci un messaggio. In alternativa puoi inviarci un'e-mail a <a href="mailto:mem@marte-design.com">mem@marte-design.com</a> o darci un'occhiata sui social media.</p>
+            <p> Compila il modulo sottostante per inviarci un messaggio. In alternativa puoi inviarci un'e-mail a <a
+                    href="mailto:mem@marte-design.com">mem@marte-design.com</a> o darci un'occhiata sui social media.
+            </p>
             <hr>
             <label for="firstname">Nome:</label>
             <input type="text" id="firstname" name="firstname" required>
-        
+
             <label for="lastname">Cognome:</label>
             <input type="text" id="lastname" name="lastname" required>
-        
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-        
+
             <label for="phone">Telefono:</label>
             <input type="tel" id="phone" name="phone">
-        
+
             <label for="message">Messaggio:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-        
+
             <!-- add hidden Honeypot input to prevent spams -->
             <input type="hidden" name="_gotcha" style="display:none !important">
-        
+
             <button type="submit">Inviare</button>
             <hr>
             <p>
@@ -88,7 +92,8 @@
             <div class="socials">
                 <a href="https://www.instagram.com/_marte_design/" class="fa fa-instagram" target="_blank"></a>
                 <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.youtube.com/@MarteDesignAdvertisingStudio/" class="fa fa-brands fa-youtube" target="_blank"></a>
+                <a href="https://www.youtube.com/@MarteDesignAdvertisingStudio/" class="fa fa-brands fa-youtube"
+                    target="_blank"></a>
                 <!-- <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
                 <a href="https://twitter.com/" class="fa fa-brands fa-x-twitter" target="_blank"></a> -->
                 <a href="https://wa.me/41445851824" class="fa fa-whatsapp" target="_blank"></a>
@@ -100,26 +105,32 @@
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/65674ae01db16644c555e71e/1hgdnov6r';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65674ae01db16644c555e71e/1hgdnov6r';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
-    <!-- Google tag (gtag.js) --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ553SHW02"></script> 
-    <script> 
-    window.dataLayer = window.dataLayer || []; 
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date()); 
-    
-    gtag('config', 'G-BJ553SHW02'); 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ553SHW02"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BJ553SHW02');
     </script>
 
 </body>
+
 </html>
