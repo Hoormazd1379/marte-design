@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marte - Advertising & Graphic Design</title>
+    <script src="https://kit.fontawesome.com/e3b50b909d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="../img/background.mp4" type="video/mp4">
+    </video>
+    <header>
+        <nav>
+            <img src="../img/marte_design_logo_oficial-06.png" width="50px">
+            <a class="navitem" href="./home">Accueil</a>
+            <a class="navitem" href="./about">À propos de</a>
+            <a class="navitem" href="./services">Services</a>
+            <a class="navitem" href="./artwork">Portfolio</a>
+            <a class="navitem" href="./contact">Contact</a>
+            <i class="fa-solid fa-bars menu-btn" style="color: #ffffff;"></i>
+        </nav>
+        <div class="dropdown-content">
+            <a href="./home">Accueil</a>
+            <a href="./about">À propos de</a>
+            <a href="./services">Services</a>
+            <a href="./artwork">Portfolio</a>
+            <a href="./contact">Contact</a>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to the button and dropdown content
+            const menuButton = document.querySelector('.menu-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+    
+            // Add a click event listener to the button
+            menuButton.addEventListener('click', function () {
+                // Toggle the 'active' class on both the button and the dropdown content
+                menuButton.classList.toggle('active');
+                dropdownContent.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <section id="services">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="abouttitle">
+            <h1>
+                Services
+            </h1>
+        </div>
+        <div class="services-content">
+            <div class="service-box">
+                <br>
+                <h2>Image de marque</h2>
+                <br>
+                <i class="fa-solid fa-file-contract fa-2xl"></i>
+                <br>
+                <p>Définissez la voix et la personnalité de votre marque. Nous vous aidons à vous démarquer sur un marché concurrentiel et à gagner la confiance de vos clients.</p>
+                <br>
+                <a href="#branding-service">Read more</a>
+            </div>
+
+            <div class="service-box">
+                <br/>
+                <h2>Médias sociaux</h2>
+                <br>
+                <i class="fa-solid fa-photo-film fa-2xl"></i>
+                <br>
+                <p>Renforcez votre présence numérique et communiquez avec votre public de manière percutante grâce à nos services de marketing des médias sociaux et de conception graphique.</p><br>
+                <a href="#social-service">Read more</a>
+            </div>
+
+            <div class="service-box">
+                <br/>
+                <h2>Conception de sites web et référencement</h2>
+                <br/>
+                <i class="fa-solid fa-globe fa-2xl"></i>
+                <br/>
+                <p>Amplifiez la présence numérique de votre marque grâce à notre service complet de création de sites web : un design attrayant et des fonctionnalités qui captivent votre public.</p><br>
+                <a href="#website-service">Read more</a>
+            </div>
+
+            <div class="service-box">
+                <br/>
+                <h2>Conception graphique</h2>
+                <br/>
+                <i class="fa-solid fa-paintbrush fa-2xl"></i>
+                <br/>
+                <p>Donnez du poids à votre entreprise en communiquant visuellement votre message. De la création de logos au matériel promotionnel, nos services de conception graphique renforcent votre marque et attirent votre public d'une manière frappante et professionnelle.</p><br>
+                <a href="#graphic-service">Read more</a>
+            </div>
+
+            <div class="service-box">
+                <br/>
+                <h2>Photoshoots</h2>
+                <br/>
+                <i class="fa-solid fa-camera fa-2xl"></i>
+                <br/>
+                <p>Améliorez l'esthétique visuelle de vos projets. Qu'il s'agisse de portraits d'entreprise ou de photographies de produits, nous contribuons à la construction d'un récit visuel fort et attrayant.</p><br>
+                <a href="#photo-service">Read more</a>
+            </div>
+        </div>
+
+        <div class="service-full" id="branding-service">
+            <div class="textfield">
+                <h2>
+                    Image de marque:
+                </h2>
+                <p>
+                    Nous ne nous contentons pas de créer des logos ; nous créons des expériences de marque immersives qui trouvent un écho auprès de votre public cible. De l'étude de marché méticuleuse aux concepts de design innovants, notre approche est stratégique et axée sur les résultats. Nous creusons profondément dans l'ADN de votre marque pour cultiver une identité unique qui non seulement se démarque, mais qui raconte aussi une histoire captivante. Nous garantissons des liens avec vos consommateurs, une cohérence dans la présentation de votre marque et un impact reconnaissable et fiable.
+                </p>
+            </div>
+            <br/>
+            <img class="service-img" src="../img/branding.jpg"/>
+        </div>
+
+        <div class="service-full" id="social-service">
+            <img class="service-img" src="../img/social.jpg"/>
+            <br/>
+            <div class="textfield">
+                <h2>
+                    Gestion des médias sociaux:
+                </h2>
+                <p>
+                    Nous créons des récits qui engagent et captivent votre public. Nos stratégies sont basées sur les données, et nous tirons parti de l'analyse pour optimiser les performances en permanence. De l'élaboration de contenus partageables à la création de liens authentiques, nous naviguons dans le paysage social en constante évolution pour maintenir votre marque au premier plan. Restez en tête grâce à notre approche qui tient compte des tendances et qui utilise les dernières fonctionnalités et les derniers algorithmes pour maximiser la portée. Nous transformons votre présence sur les médias sociaux en une communauté dynamique, qui ne se contente pas de susciter des réactions positives, mais qui génère des interactions significatives et des conversions.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-full" id="website-service">
+            <div class="textfield">
+                <h2>
+                    Conception de sites web et référencement:
+                </h2>
+                <p>
+                    À l'ère du numérique, votre site web est le visage de votre marque. Notre conception de sites web allie harmonieusement l'esthétique et la fonctionnalité, offrant une expérience utilisateur intuitive qui accroche les visiteurs. Mais un site web époustouflant n'est qu'un début. Nos stratégies de référencement garantissent que votre présence en ligne n'est pas seulement vue, mais aussi découverte. Nous utilisons les dernières techniques d'optimisation pour améliorer la visibilité sur les moteurs de recherche, en augmentant le trafic organique et en propulsant votre entreprise en tête des recherches pertinentes. Grâce à notre approche globale de la conception de sites web et du référencement, votre plateforme en ligne devient un outil puissant pour attirer et fidéliser les clients.
+                </p>
+            </div>
+            <br/>
+            <img class="service-img" src="../img/website.jpg"/>
+        </div>
+
+        <div class="service-full"  id="graphic-service">
+            <img class="service-img" src="../img/graphic.jpg"/>
+            <br/>
+            <div class="textfield">
+                <h2>
+                    Conception graphique:
+                </h2>
+                <p>
+                    Notre expertise en matière de conception graphique se situe à l'intersection de la créativité et de la fonctionnalité. Nous allons au-delà de la surface et créons des éléments visuels qui communiquent efficacement le message de votre marque. Qu'il s'agisse de supports marketing accrocheurs ou de présentations visuellement époustouflantes, nos créations laissent une impression durable. La polyvalence de notre équipe s'étend à une variété de médias, garantissant que votre marque se démarque dans n'importe quel contexte. Qu'il s'agisse de documents imprimés, de ressources numériques ou de présentations multimédias, nos services de conception graphique sont conçus pour communiquer votre proposition de valeur avec impact.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-full"  id="photo-service">
+            <div class="textfield">
+                <h2>
+                   Photoshoots:
+                </h2>
+                <p>
+                    Dans un monde visuel, la qualité de l'image n'est pas négociable. Nos photographes font preuve d'un sens aigu de la composition et de la narration à chaque prise de vue. Qu'il s'agisse de photographies de produits qui mettent en valeur les détails ou de photos de style de vie qui véhiculent l'identité de la marque.
+                </p>
+            </div>
+            <br/>
+            <img class="service-img" src="../img/photo.jpg"/>
+        </div>
+
+    </section>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65674ae01db16644c555e71e/1hgdnov6r';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ553SHW02"></script> 
+    <script> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date()); 
+    
+    gtag('config', 'G-BJ553SHW02'); 
+    </script>
+
+</body>
+</html>

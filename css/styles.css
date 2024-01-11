@@ -354,7 +354,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(0, 0, 0, 0.1333333333);
+  border: 1px solid rgba(243, 243, 243, 0.9529411765);
 }
 
 .service-box:hover {
@@ -398,7 +398,7 @@ section {
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.0666666667);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1333333333);
+  border: 1px solid rgba(243, 243, 243, 0.9529411765);
 }
 
 .service-full .textfield {
